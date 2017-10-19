@@ -103,7 +103,7 @@ NOTE: Migration to ROS kinetic and gazebo 7 performed by Oscar Lima olima@isr.te
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-            <box size="0 0 0" />
+            <box size="0.0001 0.0001 0.0001" />
         </geometry>
     </collision>
 
@@ -137,7 +137,7 @@ NOTE: Migration to ROS kinetic and gazebo 7 performed by Oscar Lima olima@isr.te
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-            <box size="0 0 0" />
+            <box size="0.0001 0.0001 0.0001" />
         </geometry>
     </collision>
 
@@ -206,7 +206,7 @@ NOTE: Migration to ROS kinetic and gazebo 7 performed by Oscar Lima olima@isr.te
     <collision>
         <origin rpy="0 0 0" xyz="0 0 0" />
         <geometry>
-            <box size="0 0 0" />
+            <box size="0.0001 0.0001 0.0001" />
         </geometry>
     </collision>
 
