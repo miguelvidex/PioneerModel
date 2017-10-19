@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="p3dx" >
+	
+	<!-- import xacro files -->
+	<xacro:include filename="$(find p3dx_description)/urdf/pioneer3dx.xacro" />
+	<xacro:include filename="$(find p3dx_description)/urdf/sensors/asus_camera.urdf.xacro" />
+
+	<!-- instantiate imported macros with specific values, i.e. camera calibration -->
+	<xacro:asus_camera name="camera" calib_x="0.06" calib_y="0.0" calib_z="0.0" calib_roll="-0.01" calib_pitch="0.04" calib_yaw="0.03" />
+
+	<!-- connect camera with the top_plate -->
+	<joint name="neck_link_to_head_camera" type="fixed" >
+		<parent link="top_plate" />
+		<child link="camera_model_link" />
+		<!--<origin xyz="0.12 0 0.05" rpy="0 0.8 0" /> -->
+		<origin xyz="0.12 0 0.02" rpy="0 -0.2 0" />
+	</joint>
+
+
+</robot>
