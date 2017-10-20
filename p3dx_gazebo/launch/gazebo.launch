@@ -33,7 +33,7 @@
         respawn="false" output="screen" args="-urdf -model p3dx -param robot_description -x 0.5 -y 0.5 -z 0.01" />
 
     <!-- robot state publisher, listen to joint states and publish tf accordingly -->
-    <!--<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />-->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
 
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
     <!-- ros_control p3rd launch file -->
