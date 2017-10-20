@@ -23,7 +23,7 @@ roslaunch p3dx_gazebo gazebo.launch
 ```
 roslaunch p3dx_description rviz.launch 
 ```
-To run see the urdf model of robot with camera:
+To see the urdf model of robot with camera:
 (terminal 1)
 ```
 roslaunch p3dx_description test_urdf.launch
