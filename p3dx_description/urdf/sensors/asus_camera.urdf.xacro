@@ -26,7 +26,7 @@
         <origin xyz="${ASUS_WIDTH / 2.0} 0 ${ASUS_HEIGHT / 2.0 + ASUS_BASE_TO_SERVO_AXIS_DISTANCE}" rpy="0 0 0"/>
         <geometry>
           <!--box size="0.035 0.185 0.025"/-->
-          <mesh filename="package://mbot_description/meshes/sensors/asus_camera_simple.dae"/>
+          <mesh filename="package://p3dx_description/meshes/sensors/asus_camera_simple.dae"/>
         </geometry>
       </visual>
       <collision>
