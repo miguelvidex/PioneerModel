@@ -28,3 +28,13 @@ To see the urdf model of robot with camera:
 ```
 roslaunch p3dx_description test_urdf.launch
 ```
+
+To teleoperate the robot by the terminal:
+Install a package
+```
+sudo apt-get install ros-kinetic-teleop-twist-keyboard
+```
+Run the node to teleoperate the robot, publishing on the topic /cmd_vel
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/cmd_vel
+```

@@ -16,48 +16,22 @@
 
     <!-- Global light source -->
     <include>
-      <uri>model://sun</uri>
+        <uri>model://sun</uri>
     </include>
 
+    <!-- walls -->
     <include>
-      <uri>model://isr-empty-testbed/outside_wall</uri>
+        <uri>file://isr-testbed/walls</uri>
+        <pose>0.491830 0.433522 0 0 0 0</pose>
     </include>
 
-    <include>
-      <uri>model://isr-empty-testbed/bedroom</uri>
-    </include>
-
-    <include>
-      <uri>model://isr-empty-testbed/bathroom</uri>
-    </include>
-
-    <include>
-      <uri>model://table</uri>
-      <pose>1.5 -1.5 0 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://isr-empty-testbed/floor</uri>
-    </include>
- 
-    <include>
-      <uri>model://isr-empty-testbed/inside_hallway</uri>
-    </include>
-
-    <include>
-      <uri>model://isr-empty-testbed/outside_hallway</uri>
-    </include>
-
-    <include>
-      <uri>model://isr-empty-testbed/patio</uri>
-    </include>
-
-    <!-- Focus camera on tall pendulum -->
+    <!-- focus camera to view the whole testbed at startup -->
     <gui fullscreen='0'>
-      <camera name='user_camera'>
-        <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
-        <view_controller>orbit</view_controller>
-      </camera>
+        <camera name='user_camera'>
+            <pose frame=''>6.75942 -8.32467 9.76061 0 0.739643 2.1722</pose>
+            <view_controller>orbit</view_controller>
+            <projection_type>perspective</projection_type>
+        </camera>
     </gui>
 
   </world>
