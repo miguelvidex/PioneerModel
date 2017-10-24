@@ -6,7 +6,7 @@
 	<xacro:include filename="$(find p3dx_description)/urdf/sensors/asus_camera.urdf.xacro" />
 
 	<!-- instantiate imported macros with specific values, i.e. camera calibration -->
-	<xacro:asus_camera name="camera" calib_x="0.06" calib_y="0.0" calib_z="0.0" calib_roll="-0.01" calib_pitch="0.04" calib_yaw="0.03" />
+	<xacro:asus_camera name="camera" calib_x="0.00" calib_y="0.0" calib_z="0.0" calib_roll="-0.01" calib_pitch="0.00" calib_yaw="0.00" />
 
 	<!-- connect camera with the top_plate -->
 	<joint name="neck_link_to_head_camera" type="fixed" >

@@ -9,7 +9,7 @@
     <arg name="robot" default="pioneer3dx_with_asus_camera.xacro" />
 
     <!-- set the desired robot world -->
-        <arg name="world_name" default="isr-empty-testbed.world" />
+        <arg name="world_name" default="testbed.world" />
         <arg name="world_path" default="$(find p3dx_gazebo)/worlds/" />
 
     <!-- We resume the logic in empty_world.launch, changing only the name of
@@ -30,7 +30,7 @@
     <!-- Run a python script to the send a service call to gazebo_ros to spawn
         a URDF robot -->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-        respawn="false" output="screen" args="-urdf -model p3dx -param robot_description -x 0.5 -y 0.5 -z 0.01" />
+        respawn="false" output="screen" args="-urdf -model p3dx -param robot_description -x 2 -y 1 -z 0.01 -R 0 -P 0 -Y 3.14159265359" />
 
     <!-- robot state publisher, listen to joint states and publish tf accordingly -->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
@@ -38,5 +38,7 @@
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
     <!-- ros_control p3rd launch file -->
     <!--<include file="$(find p3dx_control)/launch/control.launch" /> -->
-
+    
+    <!-- Set up env variable so models are found -->
+    <!--env name="GAZEBO_MODEL_PATH" value="$(find p3dx_gazebo)/models"/-->
 </launch>
