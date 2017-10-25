@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<!-- Instituto Superior Tecnico [2017] -->
+
+<sdf version="1.4">
+  <world name="testbed">
+    <include>
+      <uri>model://ground_plane</uri>
+      <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+      </material>
+    </include>
+
+    <!-- Global light source -->
+    <include>
+        <uri>model://sun</uri>
+    </include>
+
+    <include>
+        <uri>file://testbed/simple_wall</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+
+
+    <include>
+        <uri>file://testbed/markers/aruco_marker_0</uri>
+        <pose>0.075 1 0.8 0 0 0</pose>
+    </include>
+    
+    <!-- focus camera to view the whole testbed at startup -->
+    <gui fullscreen='0'>
+        <camera name='user_camera'>
+            <pose frame=''>6.75942 -8.32467 9.76061 0 0.739643 2.1722</pose>
+            <view_controller>orbit</view_controller>
+            <projection_type>perspective</projection_type>
+        </camera>
+    </gui>
+
+  </world>
+</sdf>
