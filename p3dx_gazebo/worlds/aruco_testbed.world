@@ -27,7 +27,7 @@
 
     <include>
         <uri>file://testbed/markers/aruco_marker_0</uri>
-        <pose>0.075 1 0.8 0 0 0</pose>
+        <pose>0.075 1 0.5 0 0 0</pose>
     </include>
     
     <!-- focus camera to view the whole testbed at startup -->
