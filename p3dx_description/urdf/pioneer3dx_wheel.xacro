@@ -25,7 +25,7 @@ NOTE: Migration to ROS kinetic and gazebo 7 performed by Oscar Lima olima@isr.te
 
  -->
 
-<robot xmlns:xacro="http://www.ros.org/xacro">
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
 
 <!-- macro to generate pioneer wheels (right/left hubcap + wheel) -->
 <xacro:macro name="p3dx_wheel" params="suffix parent reflect">

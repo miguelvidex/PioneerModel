@@ -23,7 +23,7 @@ NOTE: Sonar sensor simulation performed by Oscar Lima olima@isr.tecnico.ulisboa.
 
  -->
 
-<robot name="pioneer3dx" xmlns:xacro="http://www.ros.org/xacro">
+<robot name="pioneer3dx" xmlns:xacro="http://wiki.ros.org/xacro">
 
   <!-- properties (constants) -->
   <xacro:property name="ns" value="p3dx" />

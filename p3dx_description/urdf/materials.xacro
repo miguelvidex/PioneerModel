@@ -22,7 +22,7 @@ NOTE: Migration to ROS kinetic and gazebo 7 performed by Oscar Lima olima@isr.te
  -->
 
 <!-- NOTE: this materials are for rviz visualization, for gazebo visualization check: pioneer3dx.gazebo -->
-<robot name="pioneer3dx" xmlns:xacro="http://www.ros.org/xacro">
+<robot name="pioneer3dx" xmlns:xacro="http://wiki.ros.org/xacro">
 
     <material name="ChassisRed">
         <color rgba="0.8 0.0 0.0 1.0"/>

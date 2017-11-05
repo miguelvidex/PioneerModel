@@ -43,4 +43,6 @@
     <!--env name="GAZEBO_MODEL_PATH" value="$(find p3dx_gazebo)/models"/-->
     <!-- add the aruco_ros detector-->
     <include file="$(find aruco_ros)/launch/mymarker_publisher.launch"/>
+    <include file="$(find p3dx_description)/launch/rviz.launch"/>
+    <!--node pkg="rostopic" type="rostopic" name="rostopic_markers_map" args="pub markers_map geometry_msgs/PoseArray -f $(find kalman_filter)/ros/config/config_kalman_filter.yaml" output="screen"/-->
 </launch>
