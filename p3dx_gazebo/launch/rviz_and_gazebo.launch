@@ -35,14 +35,16 @@
     <!-- robot state publisher, listen to joint states and publish tf accordingly -->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
 
-    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
     <!-- ros_control p3rd launch file -->
-    <!--<include file="$(find p3dx_control)/launch/control.launch" /> -->
-    
+    <!--include file="$(find p3dx_control)/launch/control.launch" /--> 
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <!--remap from="/joint_states" to="/p3dx/joint_states" /-->
+    </node>
     <!-- Set up env variable so models are found -->
     <!--env name="GAZEBO_MODEL_PATH" value="$(find p3dx_gazebo)/models"/-->
     <!-- add the aruco_ros detector-->
     <include file="$(find aruco_ros)/launch/mymarker_publisher.launch"/>
     <include file="$(find p3dx_description)/launch/rviz.launch"/>
     <!--node pkg="rostopic" type="rostopic" name="rostopic_markers_map" args="pub markers_map geometry_msgs/PoseArray -f $(find kalman_filter)/ros/config/config_kalman_filter.yaml" output="screen"/-->
+    <!--node pkg="tf" type="static_transform_publisher" name="link_map_broadcaster" args="0 0 0 0 0 0 1 odom map 100" /-->
 </launch>
