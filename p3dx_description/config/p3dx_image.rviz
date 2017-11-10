@@ -3,8 +3,9 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
-      Splitter Ratio: 0.5
+      Expanded:
+        - /Axes1
+      Splitter Ratio: 0.903448284
     Tree Height: 568
   - Class: rviz/Selection
     Name: Selection
@@ -58,9 +59,13 @@ Visualization Manager:
         Link Tree Style: Links in Alphabetic Order
         base_link:
           Alpha: 1
-          Show Axes: false
+          Show Axes: true
           Show Trail: false
           Value: true
+        base_link_dummy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         camera_depth_frame:
           Alpha: 1
           Show Axes: false
@@ -84,7 +89,7 @@ Visualization Manager:
           Show Trail: false
         camera_rgb_optical_frame:
           Alpha: 1
-          Show Axes: false
+          Show Axes: true
           Show Trail: false
         center_hubcap:
           Alpha: 1
@@ -144,10 +149,10 @@ Visualization Manager:
       Visual Enabled: true
     - Class: rviz/Axes
       Enabled: true
-      Length: 0.0299999993
+      Length: 0.200000003
       Name: Axes
-      Radius: 0.00999999978
-      Reference Frame: camera_rgb_frame
+      Radius: 0.0199999996
+      Reference Frame: odom
       Value: true
     - Class: rviz/Image
       Enabled: true
@@ -184,13 +189,47 @@ Visualization Manager:
       Class: rviz/PoseArray
       Color: 255; 25; 0
       Enabled: true
-      Head Length: 0.0700000003
-      Head Radius: 0.0299999993
+      Head Length: 0.0199999996
+      Head Radius: 0.00999999978
       Name: PoseArray
-      Shaft Length: 0.230000004
-      Shaft Radius: 0.00999999978
-      Shape: Arrow (Flat)
+      Shaft Length: 0.100000001
+      Shaft Radius: 0.0399999991
+      Shape: Arrow (3D)
       Topic: /marker_estimations
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.100000001
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Keep: 100
+      Name: Odometry
+      Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.100000001
+        Head Radius: 0.100000001
+        Shaft Length: 0.200000003
+        Shaft Radius: 0.0500000007
+        Value: Arrow
+      Topic: /p3dx/base_pose_ground_truth
       Unreliable: false
       Value: true
   Enabled: true
@@ -217,25 +256,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 33.8994827
+      Distance: 7.04223871
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 4.32133675e-07
-        Y: 5.7220459e-06
-        Z: 1.90734863e-06
-      Focal Shape Fixed Size: true
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.815398514
+      Pitch: 0.460397691
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: -1.57460201
+      Yaw: 4.20358229
     Saved: ~
 Window Geometry:
   Displays:

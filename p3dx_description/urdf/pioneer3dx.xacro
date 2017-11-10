@@ -198,7 +198,7 @@ NOTE: Migration to ROS kinetic and gazebo 7 performed by Oscar Lima olima@isr.te
 </link>
 
 <joint name="center_wheel_joint" type="fixed">
-    <origin xyz="-0.0035 0 -0.001" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <parent link="center_wheel"/>
     <child link="center_hubcap"/>
 </joint>
