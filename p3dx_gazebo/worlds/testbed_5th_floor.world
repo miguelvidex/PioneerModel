@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+
+<!-- Instituto Superior Tecnico [2017] -->
+
+<sdf version="1.4">
+  <world name="testbed">
+    <include>
+      <uri>model://ground_plane</uri>
+      <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+      </material>
+    </include>
+
+    <!-- Global light source -->
+    <include>
+        <uri>model://sun</uri>
+    </include>
+
+    <!-- walls -->
+    <include>
+        <uri>file://testbed/5th_floor</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>file://testbed/markers/aruco_marker_0</uri>
+        <pose>0.075 1 0.275 0 0 0</pose>
+    </include>-
+    
+    <include>
+        <uri>file://testbed/markers/aruco_marker_1</uri>
+        <pose>2 -1.925 0.275 0 0 1.57079632679</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_2</uri>
+        <pose>2 -2.075 0.275 0 0 -1.57079632679</pose>
+    </include>-
+    <include>
+        <uri>file://testbed/markers/aruco_marker_3</uri>
+        <pose>0.075 -4.25 0.275 0 0 0</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_4</uri>
+        <pose>3.25 -6.425 0.275 0 0 1.57079632679</pose>
+    </include>-
+    
+    <include>
+        <uri>file://testbed/markers/aruco_marker_5</uri>
+        <pose>6.425 -1.5 0.275 0 0 3.14159265359</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_6</uri>
+        <pose>4.5 3.425 0.275 0 0 -1.57079632679</pose>
+    </include>-
+    <include>
+        <uri>file://testbed/markers/aruco_marker_7</uri>
+        <pose>4.5 3.575 0.275 0 0 1.57079632679</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_8</uri>
+        <pose>6.425 5 0.275 0 0 3.14159265359</pose>
+    </include>-
+    
+    <include>
+        <uri>file://testbed/markers/aruco_marker_9</uri>
+        <pose>0 6.425 0.275 0 0 -1.57079632679</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_10</uri>
+        <pose>-6.425 3.25 0.275 0 0 0</pose>
+    </include>-
+    <include>
+        <uri>file://testbed/markers/aruco_marker_11</uri>
+        <pose>-4.5 0.075 0.275 0 0 1.57079632679</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_12</uri>
+        <pose>-4.5 -0.075 0.275 0 0 -1.57079632679</pose>
+    </include>-
+    
+    <include>
+        <uri>file://testbed/markers/aruco_marker_13</uri>
+        <pose>-6.425 -3.25 0.275 0 0 0</pose>
+    </include>-
+        <include>
+        <uri>file://testbed/markers/aruco_marker_14</uri>
+        <pose>-3.25 -6.425 0.275 0 0 1.57079632679</pose>
+    </include>-
+    <include>
+        <uri>file://testbed/markers/aruco_marker_15</uri>
+        <pose>-0.075 -1.25 0.275 0 0 3.14159265359</pose>
+    </include>-
+
+
+
+    <!-- focus camera to view the whole testbed at startup -->
+    <gui fullscreen='0'>
+        <camera name='user_camera'>
+            <pose frame=''>6.75942 -8.32467 9.76061 0 0.739643 2.1722</pose>
+            <view_controller>orbit</view_controller>
+            <projection_type>perspective</projection_type>
+        </camera>
+    </gui>
+
+  </world>
+</sdf>

@@ -9,7 +9,7 @@
     <arg name="robot" default="pioneer3dx_with_asus_camera.xacro" />
 
     <!-- set the desired robot world -->
-        <arg name="world_name" default="testbed.world" />
+        <arg name="world_name" default="testbed_5th_floor.world" />
         <arg name="world_path" default="$(find p3dx_gazebo)/worlds/" />
 
     <!-- We resume the logic in empty_world.launch, changing only the name of
