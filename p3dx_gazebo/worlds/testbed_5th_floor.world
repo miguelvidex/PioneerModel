@@ -164,6 +164,7 @@
         <pose>7.675 -5.88 0.275 0 0 -3.14159265359</pose>
     </include>-
    
+   
 
 
     <!-- focus camera to view the whole testbed at startup -->
