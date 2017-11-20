@@ -103,7 +103,6 @@
         <uri>file://testbed/markers/aruco_marker_14</uri>
         <pose>7.675 7.34 0.275 0 0 -3.14159265359</pose>
     </include>-
-
      <include>
         <uri>file://testbed/markers/aruco_marker_15</uri>
         <pose>7.675 5.88 0.275 0 0 -3.14159265359</pose>
@@ -112,19 +111,17 @@
         <uri>file://testbed/markers/aruco_marker_16</uri>
         <pose>6.155 4.407 0.275 0 0 0</pose>
     </include>-
-
     <include>
         <uri>file://testbed/markers/aruco_marker_17</uri>
-        <pose>7.675 5.88 0.275 0 0 -3.14159265359</pose>
+        <pose>7.675 3.92 0.275 0 0 -3.14159265359</pose>
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_18</uri>
         <pose>6.155 2.644 0.275 0 0 0</pose>
     </include>-
-
     <include>
         <uri>file://testbed/markers/aruco_marker_19</uri>
-        <pose>7.675 3.92 0.275 0 0 -3.14159265359</pose>
+        <pose>7.675 1.96 0.275 0 0 -3.14159265359</pose>
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_20</uri>
@@ -132,7 +129,7 @@
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_21</uri>
-        <pose>7.675 1.96 0.275 0 0 -3.14159265359</pose>
+        <pose>7.675 0 0.275 0 0 -3.14159265359</pose>
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_22</uri>
@@ -140,15 +137,15 @@
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_23</uri>
-        <pose>7.675 0 0.275 0 0 -3.14159265359</pose>
+        <pose>7.675 -1.96 0.275 0 0 -3.14159265359</pose>
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_24</uri>
         <pose>6.155 -2.645 0.275 0 0 0</pose>
     </include>-
-    <include>
+        <include>
         <uri>file://testbed/markers/aruco_marker_25</uri>
-        <pose>7.675 -1.96 0.275 0 0 -3.14159265359</pose>
+        <pose>7.675 -3.92 0.275 0 0 -3.14159265359</pose>
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_26</uri>
@@ -156,17 +153,9 @@
     </include>-
     <include>
         <uri>file://testbed/markers/aruco_marker_27</uri>
-        <pose>7.675 -3.92 0.275 0 0 -3.14159265359</pose>
-    </include>-
-
-    <include>
-        <uri>file://testbed/markers/aruco_marker_28</uri>
         <pose>7.675 -5.88 0.275 0 0 -3.14159265359</pose>
     </include>-
    
-   
-
-
     <!-- focus camera to view the whole testbed at startup -->
     <gui fullscreen='0'>
         <camera name='user_camera'>
