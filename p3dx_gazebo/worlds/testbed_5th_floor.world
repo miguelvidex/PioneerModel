@@ -155,12 +155,12 @@
         <pose>6.155 -4.408 0.275 0 0 0</pose>
     </include>-
     <include>
-        <uri>file://testbed/markers/aruco_marker_25</uri>
+        <uri>file://testbed/markers/aruco_marker_27</uri>
         <pose>7.675 -3.92 0.275 0 0 -3.14159265359</pose>
     </include>-
 
     <include>
-        <uri>file://testbed/markers/aruco_marker_25</uri>
+        <uri>file://testbed/markers/aruco_marker_28</uri>
         <pose>7.675 -5.88 0.275 0 0 -3.14159265359</pose>
     </include>-
    
